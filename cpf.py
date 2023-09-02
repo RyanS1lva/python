@@ -22,7 +22,6 @@ if resto_divisao_9 > 9:
 else:
     resultado_1 = resto_divisao_9
 
-
 multiplicador_1 = 11
 soma_multiplicacao_10 = 0
 for j in cpf_algarismos_10:
