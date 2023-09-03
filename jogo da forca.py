@@ -14,6 +14,9 @@ while True:
     palavra_secreta = 'rato'
     letra_digitada = str(input('\nDigite uma letra: '))
 
+    if letra_digitada in letra_palpite:
+        print(f'A letra "{letra_digitada}" já foi digitada!')
+
     if letra_digitada in palavra_secreta and letra_digitada not in letra_palpite:
         letra_acertada.append(letra_digitada)
         letra_palpite.append(letra_digitada)
@@ -21,6 +24,7 @@ while True:
     
     if letra_digitada not in palavra_secreta and letra_digitada not in letra_palpite:
         erros += 1
+    
     
     if erros == 1:
         print('\n_________ \n'
