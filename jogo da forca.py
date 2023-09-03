@@ -29,12 +29,15 @@ while True:
         if letra_digitada not in palavra_secreta and letra_digitada not in letra_palpite:
             erros += 1
         
-        letra_palpite.append(letra_digitada)
-    
+        if letra_digitada not in letra_palpite and letra_digitada.isalpha():
+            letra_palpite.append(letra_digitada)
 
     else:
         print('Digite uma letra, por favor!')
     
+
+    print(f'Letras digitadas: {letra_palpite}')
+
     if erros == 1:
         print('\n_________ \n'
   ' |         |  \n'
