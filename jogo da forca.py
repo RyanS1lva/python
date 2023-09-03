@@ -14,6 +14,10 @@ while True:
     palavra_secreta = 'rato'
     letra_digitada = str(input('\nDigite uma letra: '))
 
+    if len(letra_digitada) > 1:
+        print('Digite apenas uma letra, por favor!')
+        continue
+
     if letra_digitada.isalpha():
         if letra_digitada in letra_palpite:
             print(f'A letra "{letra_digitada}" já foi digitada!')
@@ -26,7 +30,8 @@ while True:
             erros += 1
         
         letra_palpite.append(letra_digitada)
-        
+    
+
     else:
         print('Digite uma letra, por favor!')
     
