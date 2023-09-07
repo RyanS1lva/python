@@ -1,13 +1,9 @@
 print('O número é par ou impar?')
 def parimpar(num):
     if num % 2 == 0:
-        return True
+        return f"O número {num} é par!"
     else:
-        return False
+        return f"O número {num} é impar!"
     
 resultado = parimpar(int(input('Digite o seu número: ')))
-if resultado == True:
-    print('O seu número é par!')
-
-else:
-    print('O seu número é impar!')
+print(resultado)
