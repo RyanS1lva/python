@@ -19,16 +19,28 @@ while True:
                        'Digite a função desejada: ')).upper()
     if funcao == 'V':
         exibe_tabela()
+        print()
     elif funcao == 'A':
         nome_produto = str(input('Adicione o nome do produto: ')).title()
         valor_produto = float(input('Adicione o valor do produto: '))
         produtos[nome_produto] = valor_produto
+        print('Produto adicionado com sucesso!')
+        print()
     elif funcao == 'R':
         produto_removido = str(input('Digite o nome do produto que você deseja remover: ')).title()
-        produtos.pop(produto_removido)
+        if produto_removido in produtos:
+            produtos.pop(produto_removido)
+            print('Produto removido com sucesso')
+            print('')
+        else:
+            print('Produto não encontrado!')
+            print()
     elif funcao == 'S':
         print('Finalizando o programa...')
         sleep(1)
         print('Volte sempre!')
         break
+    else:
+        print()
+        print('Função não encontrada!')
 
