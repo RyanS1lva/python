@@ -1,6 +1,7 @@
 from time import sleep
-print(f'{"-=" * 5}TABELA DE PREÇOS{"-=" * 5}')
 def exibe_tabela():
+    print()
+    print(f'{"-=" * 5}TABELA DE PREÇOS{"-=" * 5}')
     for k, v in produtos.items():
         print(f' {k:<15}  {"." * 9}R${v:>5.2f}')
 #Tabela pré-configurada
