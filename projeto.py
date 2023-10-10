@@ -63,6 +63,7 @@ def gerador_questoes(nivel, xp):
     
         return nivel, xp
 
+
 # Loop principal, coleta o nome do aluno e víncula a ele os dados iniciais do jogo.
 while True:
     nome = str(input('Digite o seu nome: '))
@@ -74,5 +75,12 @@ while True:
     nivel, xp = gerador_questoes(nivel, xp)
     adiciona_aluno(nome, id_aluno, xp, nivel)
 
+    # Fazendo com que os alunos fiquem ordenados dentro da lista de acordo com o seu XP (ORDEM DECRESCENTE)
+    alunos.sort(key=lambda item: item['Xp'], reverse=True)
+    
+    posicao = 0
+    print(f'{"=-" * 4}RANKING DE ALUNOS{"-=" * 4}')
     for aluno in alunos:
-        print(aluno)
+        posicao += 1
+        print(f'{posicao}° {aluno}')
+
