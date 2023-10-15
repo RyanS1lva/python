@@ -46,10 +46,10 @@ if soma_algarismos % 10 == 0:
     print('Este cartão possui uma numeração válida!')
     
     if len(numero_cartao) == 16 and numero_cartao[0:2] == '55' or numero_cartao[0:2] == '51':
-        print('Tipo de cartão: Mastercard')
+        print('Bandeira do cartão: Mastercard')
     
     elif len(numero_cartao) == 16 or len(numero_cartao) == 13 and numero_cartao[0:] == '4':
-        print('Tipo de cartão: Visa')
+        print('Bandeira do cartão: Visa')
 else:
     print('Este cartão possui uma numeração inválida!')
 
