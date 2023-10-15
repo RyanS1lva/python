@@ -1,10 +1,10 @@
-moeda_25 = 0.25
+moeda_25 = 25
 
-moeda_10 = 0.10
+moeda_10 = 10
 
-moeda_5 = 0.05
+moeda_5 = 5
 
-moeda_1 = 0.01
+moeda_1 = 1
 
 uso_25 = 0
 uso_10 = 0
@@ -15,6 +15,8 @@ uso_1 = 0
 # Utilizando uma ordem de prioridade com as moedas de maior valor
 
 troco = float(input('Digite o troco devido: '))
+
+troco = int(troco * 100)
 
 while True:
     if troco != 0:
