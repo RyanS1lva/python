@@ -4,7 +4,7 @@ num_multiplicados = []
 num_nao_multiplicados = []
 soma_algarismos = 0
 
-print('Bem vindo, descubra se um número de cartão é válido ou não!')
+print('Bem vindo, descubra se o número de cartão é válido ou não!')
 while True:
     numero_cartao = str(input('Digite o número do cartão: '))
     numero_cartao = numero_cartao.replace(' ', '')
