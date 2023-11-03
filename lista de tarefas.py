@@ -19,8 +19,8 @@ while True:
             lista.pop()
         
         elif funcoes == 2:
-            lista.append(lista_refazer[0])
-            del(lista_refazer[0])
+            lista.append(lista_refazer[-1])
+            del(lista_refazer[-1])
         
         elif funcoes == 3:
             print('=-=-LISTA DE TAREFAS-=-=')
